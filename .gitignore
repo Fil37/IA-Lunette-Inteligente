@@ -7,3 +7,5 @@ train/
 *.zip
 *.mp4
 *.pt
+my_env/
+__pycache__/
