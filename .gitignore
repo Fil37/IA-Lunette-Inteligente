@@ -1,0 +1,9 @@
+Dataset_Basev2/
+Resultats_Entrainements/
+Resultats_Entrainements_Tuning/
+runs/
+test/
+train/
+*.zip
+*.mp4
+*.pt

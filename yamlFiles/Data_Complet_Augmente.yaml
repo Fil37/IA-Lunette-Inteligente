@@ -1,0 +1,11 @@
+train: P:\Videos\projet\Dataset_Complet_Augmente\images
+val: P:\Videos\projet\Dataset_Basev2\valid\images
+test: P:\Videos\projet\Dataset_Basev2\test\images
+nc: 6
+names:
+- greenlight
+- greenlight_car
+- redlight
+- redlight_car
+- yellowlight_car
+- zebracrossing

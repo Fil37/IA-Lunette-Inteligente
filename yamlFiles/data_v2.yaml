@@ -1,0 +1,13 @@
+train: ../Dataset_Basev2/train/images
+val: ../Dataset_Basev2/valid/images
+test: ../Dataset_Basev2/test/images
+
+nc: 6
+names: ['greenlight', 'greenlight_car', 'redlight', 'redlight_car', 'yellowlight_car', 'zebracrossing']
+
+roboflow:
+  workspace: traffic-olffk
+  project: traffic-hzr3j
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/traffic-olffk/traffic-hzr3j/dataset/1

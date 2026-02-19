@@ -1,0 +1,6 @@
+train: P:\Videos\projet\DatasetBase\train\dataset_augmented_perspective\images
+val: P:\Videos\projet\DatasetBase\valid\images
+test: P:\Videos\projet\DatasetBase\test\images
+
+nc: 6
+names: ['greenlight', 'greenlight_car', 'redlight', 'redlight_car', 'yellowlight_car', 'zebracrossing']
