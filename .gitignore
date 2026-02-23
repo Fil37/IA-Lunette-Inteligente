@@ -4,7 +4,7 @@ Resultats_Entrainements_Tuning/
 runs/
 test/
 train/
-*.zip
+*ip
 *.mp4
 *.pt
 <<<<<<< Updated upstream

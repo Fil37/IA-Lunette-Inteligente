@@ -3,7 +3,10 @@ from ultralytics import YOLO
 import torch
 import os
 import subprocess
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent
+parent_dir = BASE_DIR.parent;
 def train_model(text, save_dir):
     epochs = 70
     batch = 16
@@ -25,18 +28,18 @@ def train_model(text, save_dir):
         device = "cpu"
 
     # Chargement du modèle
-    model = YOLO("yolo11m.pt")
+    model = YOLO(parent_dir/"yolo11m.pt")
 
     try:
         # Entrainement (YOLO affiche les epoques automatiquement)
         model.train(
-            data="data.yaml",
+            data=parent_dir/"yamlFiles"/"data.yaml",
             epochs=epochs,
             patience=5,
             imgsz=640,
             batch=batch,
             device=device,
-
+            project=parent_dir / "Dataset_Basev2",
             optimizer="AdamW",
             lr0=0.002,
             lrf=0.01,
@@ -53,7 +56,7 @@ def train_model(text, save_dir):
 
             name="yolo11m_pedestrian_v3",
             exist_ok=True,
-            plots=True   # ?? courbes + affichage complet
+            plots=True   
         )
 
     except RuntimeError as e:
@@ -69,7 +72,7 @@ def train_model(text, save_dir):
     
 # après l'entraînement
 
-    subprocess.call(["powerbat.bat"], shell=True)
+    subprocess.call([parent_dir/"powerbat.bat"], shell=True)
 
 if __name__ == "__main__":
     train_model()

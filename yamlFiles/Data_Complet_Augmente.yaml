@@ -1,6 +1,6 @@
-train: P:\Videos\projet\Dataset_Complet_Augmente\images
-val: P:\Videos\projet\Dataset_Basev2\valid\images
-test: P:\Videos\projet\Dataset_Basev2\test\images
+train: P:\Videos\IA-Lunette-Inteligente\Dataset_Basev2\Augmentations\Dataset_Complet_Augmente\images
+val: P:\Videos\IA-Lunette-Inteligente\Dataset_Basev2\valid\images
+test: P:\Videos\IA-Lunette-Inteligente\Dataset_Basev2\test\images
 nc: 6
 names:
 - greenlight

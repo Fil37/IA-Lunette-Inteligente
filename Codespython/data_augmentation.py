@@ -7,17 +7,20 @@ import random
 from shutil import copy2
 import subprocess
 import sys
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent
+parent_dir = BASE_DIR.parent;
 os.system('cls')
 
 
 # --- Charger et préparer les dossiers ---
-images_dir = r"P:\Videos\projet\Dataset\valid\images"  # Dossier des images
-labels_dir = r"P:\Videos\projet\Dataset\valid\labels"  # Dossier des labels
+images_dir = parent_dir/"Dataset"/"valid"/"images"  # Dossier des images
+labels_dir = parent_dir/"Dataset"/"valid"/"labels"  # Dossier des labels
 
 # Chemins pour sauvegarder les données augmentées
-augmented_images_dir = r"P:\Videos\projet\Dataset\AugmentedDataset\valid\images"
-augmented_labels_dir = r"P:\Videos\projet\Dataset\AugmentedDataset\valid\labels"
+augmented_images_dir = parent_dir/"Dataset"/"Augmentations"/"All_augmetention"/"images"
+augmented_labels_dir = parent_dir/"Dataset"/"Augmentations"/"All_augmetention"/"labels"
 
 # Créer les dossiers augmentés s'ils n'existent pas
 os.makedirs(augmented_images_dir, exist_ok=True)

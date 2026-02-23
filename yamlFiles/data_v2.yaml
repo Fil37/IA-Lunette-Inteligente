@@ -1,4 +1,4 @@
-train: ../Dataset_Basev2/train/images
+train: ../Dataset_Basev2//train/images
 val: ../Dataset_Basev2/valid/images
 test: ../Dataset_Basev2/test/images
 
