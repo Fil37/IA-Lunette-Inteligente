@@ -1,6 +1,6 @@
-train: ../Dataset_Basev2//train/images
-val: ../Dataset_Basev2/valid/images
-test: ../Dataset_Basev2/test/images
+train: P:\Videos\IA-Lunette-Inteligente\Dataset_Basev2\train\images
+val: P:\Videos\IA-Lunette-Inteligente\Dataset_Basev2\train\valid\images
+test:P:\Videos\IA-Lunette-Inteligente\Dataset_Basev2\train\test\images
 
 nc: 6
 names: ['greenlight', 'greenlight_car', 'redlight', 'redlight_car', 'yellowlight_car', 'zebracrossing']
