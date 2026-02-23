@@ -36,7 +36,7 @@ if __name__ == "__main__":
     code_path = parent_dir / "Codespython"
 
     mes_scripts = [
-        train_path / "augmentation_combinev2.py",
+        code_path / "augmentation_combinev2.py",
         code_path / "trainv4.py"
     ]
     
